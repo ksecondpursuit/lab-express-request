@@ -38,7 +38,10 @@ app.get('/pokemon/search', (req, res) => { const name = req.query.name; const fo
     } else 
     
     {
+        //this is for if that particular Pokemon of that specific name is not found
         res.send(`Sorry, no Pokémon found with the name ${name}`);
+
+
     }
 });
 
